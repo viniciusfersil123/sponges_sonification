@@ -34,7 +34,7 @@
 #X restore 1143 516 pd module;
 #X obj 1139 483 unpack f f;
 #X obj 1139 445 inlet;
-#X obj 101 101 cnv 20 1200 277 empty \$0-colors empty 20 12 0 12 #ffd700 #404040 0;
+#X obj 101 101 cnv 20 1200 277 empty \$0-colors empty 20 12 0 12 #f57c00 #404040 0;
 #X obj 1573 455 expr $f1 * (1000 * 60) / 2051;
 #X floatatom 1573 500 5 0 0 0 - - - 0;
 #X obj 1573 575 metro;
@@ -914,13 +914,13 @@
 #X obj 647 304 bng 20 250 50 0 \$0_start global_start Start 0 -10 0 12 #00ff04 #ffffff #000000;
 #X symbolatom 553 300 10 0 0 0 - \$0_sc - 0;
 #N canvas 95 360 1024 505 \$0_playhead 0;
-#X scalar template7 0 \;;
+#X scalar template7 139.469 \;;
 #X coords 0 300 300 0 200 140 2 50 50;
 #X restore 555 146 pd \$0_playhead;
 #X obj 766 100 cnv 20 230 200 empty empty empty 20 12 0 12 #dfdfdf #00faff 0;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0_SCALE 5 float 3;
-#A 0 0 0 0 0 0;
+#A 0 8.91429 7.88571 4.71428 3.68571 2.65714;
 #A color 0;
 #A width 2;
 #X coords 0 0 5 12 200 140 1 0 0;
@@ -1033,7 +1033,7 @@
 #X msg 1781 307 3;
 #X msg 1911 313 4;
 #X obj 2068 252 text define -k presets;
-#A set preset1 \; 0 \; 0 \; 0 \; 0 \;  \;  \; 0 \; 0 \; 0 \; 0 \; 0 \; 1 \;;
+#A set preset1 \; 0.331361 \; 1.90112 \; 1.13913 \; 0.828014 \; SZ \; SZ \; 8.91429 \; 7.88571 \; 4.71428 \; 3.68571 \; 2.65714 \; 4 \;;
 #X obj 1972 449 r \$0_attack;
 #X obj 2059 451 r \$0_release;
 #X obj 2154 450 r \$0_duration;
@@ -1057,7 +1057,7 @@
 #X obj 2264 452 r \$0_wf;
 #X obj 2328 452 r \$0_sc;
 #X obj 2328 504 t b s;
-#N canvas 66 32 1300 665 parser 0;
+#N canvas 26 158 975 481 parser 0;
 #X obj 1106 63 inlet;
 #X obj 70 165 t b p;
 #X obj 70 217 text get -s text t;
@@ -1183,6 +1183,11 @@
 #X obj 1692 266 list trim;
 #X msg 1692 216 12;
 #X obj 1692 376 s \$0_oct;
+#X obj 929 422 r master_scale_0;
+#X obj 1102 425 r master_scale_1;
+#X obj 1271 422 r master_scale_2;
+#X obj 1405 420 r master_scale_3;
+#X obj 1550 422 r master_scale_4;
 #X connect 0 0 1 0;
 #X connect 0 0 6 0;
 #X connect 0 0 11 0;
@@ -1275,6 +1280,11 @@
 #X connect 76 0 77 0;
 #X connect 77 0 79 0;
 #X connect 78 0 76 0;
+#X connect 80 0 62 0;
+#X connect 81 0 64 0;
+#X connect 82 0 66 0;
+#X connect 83 0 68 0;
+#X connect 84 0 70 0;
 #X restore 2083 296 pd parser;
 #X obj 2298 29 inlet;
 #X floatatom 2298 68 5 0 0 0 - - - 0;
