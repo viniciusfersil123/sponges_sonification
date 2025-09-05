@@ -34,7 +34,7 @@
 #X restore 1143 516 pd module;
 #X obj 1139 483 unpack f f;
 #X obj 1139 445 inlet;
-#X obj 101 101 cnv 20 1200 277 empty \$0-colors empty 20 12 0 12 #f57c00 #404040 0;
+#X obj 101 101 cnv 20 1200 277 empty \$0-colors empty 20 12 0 12 #14c5ec #404040 0;
 #X obj 1573 455 expr $f1 * (1000 * 60) / 2051;
 #X floatatom 1573 500 5 0 0 0 - - - 0;
 #X obj 1573 535 t b f;
@@ -913,13 +913,13 @@
 #X obj 647 304 bng 20 250 50 0 \$0_start global_start Start 0 -10 0 12 #00ff04 #ffffff #000000;
 #X symbolatom 553 300 10 0 0 0 - \$0_sc - 0;
 #N canvas 95 360 1024 505 \$0_playhead 0;
-#X scalar template7 137.421 \;;
+#X scalar template7 0 \;;
 #X coords 0 300 300 0 200 140 2 50 50;
 #X restore 555 146 pd \$0_playhead;
 #X obj 766 100 cnv 20 230 200 empty empty empty 20 12 0 12 #dfdfdf #00faff 0;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array \$0_SCALE 5 float 3;
-#A 0 6.34286 3.34285 3.34285 4.02857 7.97143;
+#A 0 7.28572 3.51429 4.22144 6.57858 7.6;
 #A color 0;
 #A width 2;
 #X coords 0 0 5 12 200 140 1 0 0;
@@ -1032,7 +1032,7 @@
 #X msg 1781 307 3;
 #X msg 1911 313 4;
 #X obj 2068 252 text define -k presets;
-#A set preset1 \; 0.266272 \; 0.775793 \; 114.42 \; 7.17148 \; SZ \; SZ \; 6.34286 \; 3.34285 \; 3.34285 \; 4.02857 \; 7.97143 \; 0 \; 200 \;;
+#A set preset1 \; 0.751479 \; 0 \; 0 \; 0 \; SM \; SZ \; 7.28572 \; 3.51429 \; 4.22144 \; 6.57858 \; 7.6 \; 2 \; 1 \;;
 #X obj 1972 449 r \$0_attack;
 #X obj 2059 451 r \$0_release;
 #X obj 2154 450 r \$0_duration;
