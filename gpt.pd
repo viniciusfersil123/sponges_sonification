@@ -1,0 +1,32 @@
+#N canvas 100 100 600 400 10;
+#X obj 100 50 metro 250;
+#X obj 100 80 t b b;
+#X obj 150 110 f 0;
+#X obj 180 110 + 1;
+#X obj 150 140 % 2;
+#X obj 150 170 sel 0 1;
+#X obj 250 80 hsl 128 15 0 1 0 0 empty empty swing 0 -8 0 10 -262144 -1
+-1 0 1;
+#X floatatom 250 110 5 0 0 0 - - -;
+#X obj 250 140 * 125;
+#X obj 200 200 delay;
+#X msg 200 230 bang;
+#X msg 100 200 bang;
+#X obj 100 260 bng 30 250 50 0 empty empty OUT 0 -6 0 10 -262144 -1
+-1;
+#X connect 0 0 1 0;
+#X connect 1 0 11 0;
+#X connect 1 1 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 2 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 11 0;
+#X connect 5 1 9 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 1;
+#X connect 9 0 10 0;
+#X connect 10 0 12 0;
+#X connect 11 0 12 0;
+
