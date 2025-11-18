@@ -1,3 +1,3 @@
 #N struct template7 float x;
-#N canvas 52 20 1300 665 12;
-#X obj -120 278 sponges_hal;
+#N canvas 63 71 975 481 12;
+#X obj 37 14 sponges_hal;
